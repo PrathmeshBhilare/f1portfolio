@@ -1,0 +1,13 @@
+<svg width="512" height="512" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- Top Left Block -->
+  <path d="M0 0 L60 0 L0 60 Z" fill="#FF5A00" />
+  
+  <!-- Inner Racing Line -->
+  <path d="M70 0 L100 0 L0 100 L0 70 Z" fill="#FF5A00" />
+  
+  <!-- Outer Racing Line -->
+  <path d="M10 100 L40 100 L100 40 L100 10 Z" fill="#FF5A00" />
+  
+  <!-- Bottom Right Apex -->
+  <path d="M50 100 L100 100 L100 50 Z" fill="#FF5A00" />
+</svg>
