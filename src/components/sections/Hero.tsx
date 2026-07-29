@@ -19,7 +19,7 @@ export default function Hero({ startAnimation }: HeroProps) {
         playsInline
         className="absolute inset-0 w-full h-full object-cover"
       >
-        <source src="/hero-video.webm" type="video/webm" />
+        <source src="/hero-video.mp4" type="video/mp4" />
       </video>
 
       {/* Gradient Overlay */}
