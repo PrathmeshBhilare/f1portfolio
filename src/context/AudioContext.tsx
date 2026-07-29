@@ -59,10 +59,17 @@ export function AudioProvider({ children }: { children: React.ReactNode }) {
   }, [isMuted]);
 
   const toggleMute = () => {
-    setIsMuted(prev => !prev);
+    if (audioRef.current?.paused) {
+      // If paused (e.g. autoplay blocked), force unmute and play
+      setIsMuted(false);
+      audioRef.current.play().catch(() => {});
+    } else {
+      // Otherwise just toggle mute state
+      setIsMuted(prev => !prev);
+    }
+
     if (!hasStarted) {
       setHasStarted(true);
-      audioRef.current?.play().catch(() => {});
     }
   };
 
