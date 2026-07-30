@@ -12,7 +12,7 @@ export default function CustomCursor() {
     if (typeof window === 'undefined') return;
     
     // Fallback to native cursor on touch devices
-    const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches;
+    const isTouchDevice = window.matchMedia('(hover: none) and (pointer: coarse)').matches || (typeof navigator !== 'undefined' && navigator.maxTouchPoints > 0);
     if (isTouchDevice) {
       setIsTouch(true);
       return;

@@ -31,7 +31,7 @@ export default function Hero({ startAnimation }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: startAnimation ? 1 : 0, y: startAnimation ? 0 : 20 }}
           transition={{ duration: 0.8, ease: 'easeOut' }}
-          className="font-display text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-[0.2em] text-text-primary"
+          className="font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold uppercase tracking-[0.2em] text-text-primary"
         >
           PRATHMESH BHILARE
         </motion.h1>
@@ -40,7 +40,7 @@ export default function Hero({ startAnimation }: HeroProps) {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: startAnimation ? 1 : 0, y: startAnimation ? 0 : 20 }}
           transition={{ duration: 0.8, delay: 0.2, ease: 'easeOut' }}
-          className="mt-6 text-text-muted font-display font-medium text-xl md:text-2xl tracking-[0.15em] uppercase"
+          className="mt-6 text-text-muted font-display font-medium text-sm sm:text-base md:text-xl lg:text-2xl tracking-[0.15em] uppercase"
         >
           FREELANCE FULL-STACK DEV // AI/ML ENGINEER
         </motion.p>

@@ -104,11 +104,11 @@ export default function Contact() {
             <p className="flex items-center gap-2"><span className="text-accent">&gt;</span> AWAITING TRANSMISSION<span className="animate-ping inline-block w-2 h-4 bg-accent ml-1 translate-y-1"></span></p>
           </div>
           
-          <div className="relative z-10 mb-16 md:mb-24 group/email inline-block">
+          <div className="relative z-10 mb-16 md:mb-24 group/email inline-block w-full overflow-hidden">
             <p className="text-xs text-text-muted uppercase tracking-widest mb-4 flex items-center gap-2">
               <Mail size={14} className="text-accent" /> Direct Link
             </p>
-            <a href="mailto:prathmeshbhilare52@gmail.com" className="block font-display text-2xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter text-text-primary transition-all duration-500 hover:text-accent active:scale-95 relative">
+            <a href="mailto:prathmeshbhilare52@gmail.com" className="block font-display text-[15px] sm:text-xl md:text-4xl lg:text-5xl font-bold uppercase tracking-tighter text-text-primary transition-all duration-500 hover:text-accent active:scale-95 relative truncate">
               prathmeshbhilare52@gmail.com
               <div className="h-1 w-0 bg-accent transition-all duration-500 group-hover/email:w-full mt-2" />
             </a>
@@ -159,7 +159,7 @@ export default function Contact() {
             </a>
           </div>
 
-          <div className="absolute -bottom-16 -right-16 text-[200px] font-display font-bold text-line/10 pointer-events-none select-none z-0">
+          <div className="absolute -bottom-10 -right-10 md:-bottom-16 md:-right-16 text-[120px] md:text-[200px] font-display font-bold text-line/10 md:text-line/10 opacity-30 md:opacity-100 pointer-events-none select-none z-0">
             05
           </div>
         </div>

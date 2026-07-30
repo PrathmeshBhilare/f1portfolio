@@ -58,19 +58,19 @@ export default function SessionComplete() {
         
         <div className="flex flex-col md:flex-row items-center justify-between mb-16 gap-8">
           
-          <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4" ref={flagRef} style={{ perspective: '1000px' }}>
-            <div className="w-16 h-16 bg-accent flex items-center justify-center rounded-sm transform -rotate-12 hover:rotate-0 transition-transform duration-300 shadow-[0_0_20px_rgba(255,78,0,0.3)]">
-              <Flag size={32} className="text-bg-primary fill-current" />
+            <div className="flex flex-col items-center md:items-start text-center md:text-left gap-4" ref={flagRef} style={{ perspective: '1000px' }}>
+              <div className="w-16 h-16 bg-accent flex items-center justify-center rounded-sm transform -rotate-12 hover:rotate-0 transition-transform duration-300 shadow-[0_0_20px_rgba(255,78,0,0.3)]">
+                <Flag size={32} className="text-bg-primary fill-current" />
+              </div>
+              <div>
+                <h2 className="font-display text-3xl sm:text-4xl md:text-5xl font-bold uppercase tracking-tighter text-text-primary">
+                  Session Complete
+                </h2>
+                <p className="font-display text-xs sm:text-sm text-text-muted uppercase tracking-widest mt-2">
+                  All systems nominal. Ready to deploy.
+                </p>
+              </div>
             </div>
-            <div>
-              <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-tighter text-text-primary">
-                Session Complete
-              </h2>
-              <p className="font-display text-sm text-text-muted uppercase tracking-widest mt-2">
-                All systems nominal. Ready to deploy.
-              </p>
-            </div>
-          </div>
 
           <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="group flex flex-col items-center gap-2">
             <div className="w-12 h-12 border border-line rounded-full flex items-center justify-center group-hover:border-accent transition-colors duration-300">

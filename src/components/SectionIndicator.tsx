@@ -46,7 +46,7 @@ export default function SectionIndicator() {
 
   return (
     <div 
-      className={`fixed bottom-6 left-6 z-[9990] font-mono text-xs text-text-primary uppercase tracking-[0.2em] transition-opacity duration-700 pointer-events-none ${isVisible ? 'opacity-40' : 'opacity-0'}`}
+      className={`fixed bottom-4 left-4 md:bottom-6 md:left-6 z-[9980] font-mono text-[10px] sm:text-xs text-text-primary uppercase tracking-[0.2em] transition-opacity duration-700 pointer-events-none ${isVisible ? 'opacity-40' : 'opacity-0'}`}
     >
       {activeSection}
     </div>

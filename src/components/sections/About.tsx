@@ -129,7 +129,7 @@ export default function About() {
               <p>Specializing in premium websites, AI automation and modern web applications.</p>
             </div>
 
-            <div className="flex items-center justify-end gap-6 border-t border-line pt-6 mt-auto">
+            <div className="flex flex-col sm:flex-row items-end sm:items-center justify-end gap-4 sm:gap-6 border-t border-line pt-6 mt-auto pb-16 md:pb-0">
               <a 
                 href="https://github.com/PrathmeshBhilare"
                 target="_blank"
